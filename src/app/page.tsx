@@ -1,103 +1,24 @@
-import Image from "next/image";
+'use client';
+import Toggle from "./components/Toggle";
+import Particles from "./react_bits/Particles";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <div>
+      {/* <div className="fixed inset-0 w-full h-full">
+        <Particles
+          particleColors={['#ffffff', '#ffffff']}
+          particleCount={400}
+          particleSpread={10}
+          speed={0.1}
+          particleBaseSize={100}
+          moveParticlesOnHover={true}
+          alphaParticles={false}
+          disableRotation={false}
         />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div> */}
+      {/* <Toggle checked={true} /> */}
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste culpa voluptatibus deserunt quod ipsa. Incidunt, delectus! Facilis in eveniet optio fugit aut quos facere dolorum cupiditate numquam repellat nemo cumque minus eius, iure, impedit vitae voluptas. Dolore similique sapiente animi ad suscipit cumque fugit. Delectus magnam culpa quas deserunt pariatur officiis dolores quis. Consectetur, delectus vero ut quaerat corrupti et accusamus blanditiis libero minima eius ab consequatur nesciunt laboriosam quam deserunt? Saepe libero distinctio ipsum aliquid tempora inventore rem dicta provident beatae ullam recusandae laboriosam quidem, neque accusamus facere, dolorum cumque porro ea harum blanditiis voluptatibus quo maiores accusantium obcaecati. Dolore necessitatibus eligendi vitae iusto perspiciatis magnam nihil cupiditate quisquam officiis a dicta aperiam, asperiores sunt nostrum repellendus doloremque! Amet obcaecati ad possimus impedit. Quisquam optio deserunt delectus pariatur quas blanditiis, sapiente repellendus iste consequuntur voluptatem veniam, adipisci earum tempora fuga fugit itaque sed possimus iusto nisi sequi corporis! Iusto molestias mollitia accusantium veritatis neque nulla quidem fuga eveniet, qui eaque porro amet aut voluptatem assumenda, esse nesciunt nihil nostrum maxime numquam autem vel. Quisquam hic aliquid quibusdam ullam nostrum voluptate omnis asperiores laudantium dolores reiciendis sed ratione corrupti, magni explicabo iusto accusantium, sunt doloremque facilis minima enim. Fuga ab aliquid optio alias quam perspiciatis fugiat aperiam doloremque distinctio porro tenetur labore recusandae officia iste temporibus quos praesentium maiores deserunt laborum iusto, a vel magnam incidunt. Provident, deleniti quidem magni praesentium vel, qui voluptatum ad delectus, cupiditate reprehenderit voluptates. Numquam dolore maiores laborum accusamus placeat deleniti ipsum quod sint blanditiis veniam iusto dicta libero ab sequi quae dolor, consequatur optio exercitationem fuga laboriosam repellendus quo nihil similique! Quae veritatis nisi beatae, molestias saepe quisquam doloribus perspiciatis quis fuga adipisci eum harum, debitis numquam. Repellendus eaque reiciendis ducimus vero voluptas eveniet quaerat aperiam veniam dignissimos et, quam nesciunt veritatis eos hic expedita doloribus facere placeat voluptates. Esse qui nemo itaque magni eos provident labore sit unde deserunt temporibus? Minus mollitia voluptatem corporis ad incidunt ratione, quaerat fugiat natus blanditiis voluptas esse in officiis pariatur a, quod, consectetur sed repellat voluptatibus. Itaque eligendi quas exercitationem quo quae numquam? Voluptates molestiae ab vero quisquam eligendi quod voluptatem modi facilis ad perferendis sit assumenda beatae veritatis, voluptatum velit ipsa vitae molestias expedita eaque amet nisi alias, nihil sapiente. Placeat obcaecati nesciunt velit neque commodi! Perferendis consequuntur id provident, tempore hic corrupti porro. Provident id deleniti excepturi placeat amet! Maxime voluptate, rem nisi accusantium dolor velit quisquam ad quae aliquid odio mollitia dolores earum veritatis deserunt doloremque ea est? Debitis aliquam nulla officia ipsam quisquam quas? Illo, quod inventore minima rem, alias dolores laborum iusto sed perspiciatis qui doloremque accusamus nihil nulla. Deserunt ipsa tempora modi reprehenderit distinctio commodi asperiores, harum quae, vitae earum nostrum inventore. Voluptas, dignissimos commodi maxime reiciendis pariatur blanditiis veritatis voluptatum ipsam debitis cum eius quasi aliquid reprehenderit tempore officia modi quod minus ullam porro recusandae fuga nesciunt optio illum soluta. Tempora, est. Doloribus iste voluptate minima! Voluptate, ipsam, rerum magni sunt dignissimos autem, nemo voluptatem saepe sed ut accusamus distinctio officia! Alias odit iste quaerat illum ducimus voluptates odio? Veritatis provident, hic animi quam molestiae dicta dolor sit, veniam asperiores accusantium, tempora nam. Quaerat reprehenderit cupiditate, sequi iste possimus aliquam ipsam ipsa, delectus obcaecati cumque quam deleniti tempore eum excepturi quia exercitationem quae perferendis hic voluptatibus modi maxime vel odit. Dicta et incidunt unde quas rerum, alias voluptatem praesentium corrupti saepe libero commodi neque dolore tempore odit cupiditate accusamus quaerat repudiandae dolor magnam tempora magni labore hic. A totam id nihil similique, praesentium accusantium nisi eos quia placeat doloremque alias saepe quae tempore explicabo aspernatur consequuntur! Voluptates, soluta, modi pariatur officia in unde harum vel sapiente ab molestias voluptas quasi velit quas aspernatur numquam quidem ad sed facere et vitae ipsa! Delectus laudantium magni eos labore. Soluta, consequuntur nihil expedita rem quam sunt, maxime dignissimos autem necessitatibus dolorum exercitationem deleniti a, nisi optio debitis veniam doloremque asperiores delectus hic voluptatum perferendis minus consectetur. Est assumenda expedita ullam nisi dolores eos cum ipsa consequuntur. Voluptatem magni est veritatis a ipsum at iure obcaecati dolor consectetur impedit facere dolorem cum voluptate odit, cupiditate sint sunt nam repudiandae architecto deserunt minima. Porro quas at velit ipsam maxime totam sit obcaecati ad nesciunt, animi impedit nam autem hic sed, quo consequuntur quam. Harum deserunt alias voluptatum quidem ratione ducimus maxime quibusdam, nobis ea quia! Itaque delectus ipsam unde, debitis voluptatibus ad quisquam labore est molestias libero eius maxime provident. Nisi quae eligendi iste quod aliquid. Architecto consequatur similique, dolor impedit veniam dignissimos autem possimus nulla alias, ducimus, soluta iusto eum mollitia. Quisquam rem quas consequatur quasi assumenda delectus nisi vel ratione distinctio culpa quaerat dolores soluta dolorem esse, iure eveniet iusto ducimus neque totam. Magni minima porro necessitatibus aliquam repellendus amet veritatis libero facere distinctio iusto assumenda quisquam deleniti nesciunt ipsum, tenetur voluptatum dolores deserunt earum animi nihil quae cum odit sunt. Vitae ab non aut minima nemo, adipisci delectus sunt velit porro voluptate aperiam laborum dolorem, eum deserunt hic consequuntur ex, labore obcaecati temporibus? Id voluptatem laboriosam ullam assumenda adipisci error, laudantium itaque dignissimos. Autem qui laborum recusandae labore quasi assumenda deleniti earum, est nisi aut quisquam ullam corporis rem nobis doloremque vel esse quam neque sunt consequuntur temporibus. Tenetur aliquid eaque architecto eius repudiandae voluptates tempora dignissimos quasi omnis! Est officiis praesentium dolorum enim eos repellendus fuga pariatur obcaecati laudantium asperiores molestias ducimus quae voluptas corrupti nesciunt nulla necessitatibus officia sunt, possimus eveniet! Debitis repellendus, nisi quas minima rem, aperiam magnam deleniti id qui fuga recusandae, deserunt itaque dolore illum architecto dolor maxime. Odit quia quaerat alias tempore rerum dolorum quibusdam odio commodi temporibus nesciunt? Culpa, dolore corporis? Sequi cumque unde quia ducimus iusto doloribus veniam tempora ipsam perferendis? Eos cupiditate, error debitis fugit hic eveniet incidunt esse soluta nihil, perferendis facilis? Perspiciatis, amet fugit eius repudiandae corporis obcaecati modi deserunt! Excepturi rem natus soluta fuga iure? A, dicta aperiam? Atque, voluptates? Nobis corporis maxime nostrum quos neque, optio assumenda architecto dolor doloremque consequuntur, fugiat itaque deserunt sapiente eum, impedit delectus a.</p>
     </div>
   );
 }
