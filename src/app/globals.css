@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
+/* dark mode transition */
+* {
+  @apply transition-colors duration-500 ease-in-out;
+}
+
+/* dark mode */
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme{
+  /* --color- */
+}
+
 @layer components{
   .menu{
     @apply cursor-pointer text-base font-normal text-white transition-transform duration-300 ease-out hover:scale-110 relative 
@@ -7,9 +19,18 @@
         after:h-[2px] after:w-0 after:bg-blue-500 after:transition-all after:duration-300 
         hover:after:w-full;
   }
+  .mobilemenu{
+    @apply text-white text-xl font-medium;
+  }
+  .activemobilemenu{
+    @apply text-[#34b484] transition-transform duration-300 ease-out relative  after:content-[''] after:absolute after:left-0 after:-bottom-1 
+          after:h-[2px] after:bg-[#34b484] after:transition-all after:duration-300 after:w-full
+  }
+  .custom-container{
+    @apply max-w-[1200px] mx-auto;
+  }
 }
 
-.custom-container{
-  @apply max-w-[1200px] mx-auto;
-  /* background-color: #ff0000; */
-}
+
+
+

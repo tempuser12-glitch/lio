@@ -39,8 +39,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
   return (
     <html lang="en">
-      <body className={` ${myFont.className} min-h-screen bg-black relative`}>
-        <header className="h-[54px] w-3xl custom-container sticky top-6 rounded-full bg-white/30 backdrop-blur border">
+      <body className={` ${myFont.className} min-h-screen relative dark:bg-black`}>
+        <header className="h-[54px] w-full lg:w-3xl lg:mx-auto sticky top-0 lg:top-6">
           <TopBar />
         </header>
         <main>
