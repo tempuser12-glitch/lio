@@ -35,15 +35,13 @@ const TopBar = () => {
                 duration: 0.5,
                 ease: "power2.out",
             });
-
-            gsap.from(navbardesktop.current.children, {
-                scale: 0.5,
-                opacity: 0,
-                delay: 0.5,
-                duration: 0.6,
-                stagger: 0.2,
-            })
         }
+        
+        gsap.from('#navlistitems li', {
+            opacity: 0,
+            delay: 0.5,
+            stagger: 0.2,
+        })
     });
 
     useEffect(() => {
@@ -59,7 +57,7 @@ const TopBar = () => {
     return (
         <>
             <div ref={navbardesktop} className='hidden custom-container h-full lg:flex justify-between items-center rounded-full bg-black dark:bg-white'>
-                <ul className='w-full flex justify-evenly items-center gap-3 '>
+                <ul id="navlistitems" className='w-full flex justify-evenly items-center gap-3 '>
                     <li className='menu'>Home</li>
                     <li className='menu'>Skills</li>
                     <li className='menu'>Projects</li>
