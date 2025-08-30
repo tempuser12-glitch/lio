@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import './globals.css'
 import localFont from "next/font/local";
 import TopBar from "./components/TopBar";
-import Particles from "./react_bits/Particles";
 
 
 const myFont = localFont({
