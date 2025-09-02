@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import './globals.css'
 import localFont from "next/font/local";
 import TopBar from "./components/TopBar";
+import Footer from "./components/Footer";
 
 
 const myFont = localFont({
@@ -46,7 +47,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
           {children}
         </main>
         <footer>
-          Footer
+          <Footer />
         </footer>
       </body>
     </html>
