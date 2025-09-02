@@ -2,6 +2,8 @@
 import { ChangeEvent, useState } from "react";
 import Toast from "../react_bits/Toast";
 import emailjs from "@emailjs/browser";
+import Link from "next/link";
+import Image from "next/image";
 
 
 type Errors = {
@@ -93,9 +95,19 @@ const Contact = () => {
     return (
         <section className='custom-container w-full pt-16 px-6 pb-6 flex flex-col items-center justify-center gap-6 lg:flex-row'>
             <div className='w-full'>
-                <h2 className="text-6xl font-bold">Get in touch</h2>
+                <h2 className="text-4xl md:text-6xl font-bold">Get in touch</h2>
+                <div className="pt-8">
+                    <div className="">
+                        <Link href='/' className="no-underline hover:underline underline-offset-2 text-sm font-medium flex items-start justify-start gap-1"><Image src='/images/linkedin_icon.svg' alt="linkedin" width={18} height={18} /> Linkedin</Link>
+                    </div> 
+                    <p className="text-sm font-medium my-3 flex items-center justify-start gap-1"><Image src='/images/dialer_icon.svg' alt="dialer" width={18} height={18} /> +91 88787878784</p>
+                    <div className="inline-flex items-center justify-center gap-0.5 px-4 py-2 rounded-4xl border bg-[#1DCD97] text-white text-sm font-medium cursor-pointer">
+                        <Link href='/files/dummypdf.pdf' download={true} className="">Download Resume</Link>
+                    </div>
+                </div>
             </div>
             <div className='w-full'>
+
                 <label htmlFor="Name" className='text-sm font-normal mt-4 mb-2 block'>Name<span className="text-red-500">*</span></label>
                 <input type="text" name="name" id="Name" className="w-full h-11 rounded-lg border outline-0 px-3 hover:border-primary focus:border-primary focus:shadow-[0_0_0_0.25rem_#0d6efd40]" onChange={handleChange} value={datas.name} autoComplete='off' />
                 {errors?.name && <span className="text-red-500 text-xs font-normal">{errors.name}</span>}
@@ -107,6 +119,7 @@ const Contact = () => {
 
                 <label htmlFor="message" className='text-sm font-normal mt-4 mb-2 block'>Message</label>
                 <textarea rows={6} name="message" id="message" className="w-full rounded-lg border outline-0 p-3 resize-none hover:border-primary focus:border-primary focus:shadow-[0_0_0_0.25rem_#0d6efd40]" value={datas.message} onChange={handleChange}></textarea>
+
                 <div className="w-full pt-3">
                     <button className="border border-[#FFDD00] text-center text-black px-5 py-2 rounded-4xl cursor-pointer" onClick={hanldeClear}>Clear All</button>
                     <button className="shine ml-4 border border-transparent bg-primary text-center text-white px-5 py-2 rounded-4xl cursor-pointer hover:bg-[#03387e]" onClick={handleSubmit}>Submit</button>
